@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    color: var(--color-texto);
+    background-color: var(--fondo-principal);
+}
+
+:root{
+    --color-texto: #2F1C6A;
+    --fondo-blanco: #ffffff;
+    --fondo-principal: #F3F4FE;
+    --color-btn-violeta: #af64fe ;
+    --color-btn-celeste: #4C99FE;
+}
+
+nav{
+    background-color: var(--fondo-principal);
+    display: flex;
+    position: fixed;
+    z-index: 10;
+    flex-direction: column;
+    align-items:flex-end;
+    justify-content: center;
+    height: 80px;
+    width: 100%;
+}
+
+#btn-menu{
+    display: flex;
+    color: var(--color-texto);
+    font-size: 1.5rem;
+    border: none;
+    background: none;
+    padding: 20px 40px;
+}
+
+ul{
+    background-color: var(--fondo-blanco) ;
+    position: fixed;
+    top:80px;
+    width: 100%;
+    height: auto;
+    padding: 0.8rem 0;
+    left: -100%;
+}
+
+.clickeado{
+    left: 0;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--fondo-blanco);
+}
+
+.ul-menu li a{
+    color: var(--color-texto) ;
+    background-color: var(--fondo-blanco);
+    width: 70%;
+    padding: 1rem;
+    text-align: center;
+    border-top: solid 1px var(--color-texto);
+}
+
+main{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+.section-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+}
+
+.figure-main img{
+    background-color: var(--fondo-blanco);
+    width: 100%;
+    object-fit: cover;
+}
+
+.title-main{
+    display: flex;
+    flex-direction: column;
+    /* flex-flow: column wrap; */
+    text-align: left;
+    padding-left: 1.5rem;
+    width: 90%;
+    font-size: 1rem;
+    
+}
+
+.h1{
+    padding: 1rem 0;
+    font-weight: 600;
+}
+
+.h2{
+    color: var(--color-btn-violeta);
+    padding: 1rem 0;
+    width: 60%;
+}
+
+.main__social-media{
+    color: var(--color-texto);
+    display: flex;
+    font-size: 1.6rem;
+    width: 90%;
+    align-items: flex-end;
+    padding:1rem 2rem;
+    gap: 1.5rem;
+}
+
+/* Section cards */
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem 0;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+}
+
+.section__title h3{
+    text-align: center;
+    padding: 4rem 0;
+    font-size: 1.3rem;
+}
+
+.projects__container{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.projects__card{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.projects__card:hover{
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.card-figure{
+    width: 100%;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.card-img{
+    object-fit: cover;
+    height: 100%;
+    max-width: 100%;
+}
+
+.card-img:hover{
+    transform: scale(1.2) ;
+-webkit-transform: scale(1.2) ;
+-moz-transform: scale(1.2) ;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.5rem;
+    background-color: var(--fondo-blanco);
+}
+
+.card-body h4,p{
+    background-color: var(--fondo-blanco);
+    padding: 0.5rem 0;
+}
+
+.card-body button{
+    width: 50%;
+    padding: 0.4rem;
+    margin: 0.8rem 0;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-btn-celeste);
+}
+
+.card-body__a{
+    background-color: var(--color-btn-celeste);
+    color: var(--fondo-blanco);
+    font-size: 1rem;
+}
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills-container{
+    display:inline-flex;
+    flex-flow:row wrap;
+    gap: 1rem;
+    width: 80%;
+}
+
+.skills-icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 2rem;
+    flex-grow: 1;
+}
+
+.skills-p{
+    font-size: 1rem;
+}
+
