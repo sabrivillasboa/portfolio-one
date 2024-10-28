@@ -15,12 +15,12 @@
                 <i class="fa-solid fa-bars"></i>
             </button>
             <ul class="ul-menu">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Proyectos</a></li>
-                <li><a href="#">Habilidades</a></li>
-                <li><a href="#">Cursos</a></li>
-                <li><a href="#">Sobre mi</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li class="menu-li"><a href="#">Inicio</a></li>
+                <li class="menu-li"><a href="#">Proyectos</a></li>
+                <li class="menu-li"><a href="#">Habilidades</a></li>
+                <li class="menu-li"><a href="#">Cursos</a></li>
+                <li class="menu-li"><a href="#">Sobre mi</a></li>
+                <li class="menu-li"><a href="#">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -34,16 +34,16 @@
             <div class="title-main">
                 <h1 class="h1">Sabrina Villasboa</h1>
                 <h2 class="h2">Frontend Developer</h2>
-            </div>
-            <div class="main__social-media">
-                <i class="fa-brands fa-linkedin"></i>
-                <i class="fa-brands fa-github"></i>
+                <div class="main__social-media">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-github"></i>
+                </div>
             </div>
         </section>
     </main>
-    <section class="projects">
+    <!-- <section class="projects">
         <div class="section__title">
-            <h3>Proyectos realizados</h3>
+            <h3>Proyectos</h3>
         </div>
         <article class="projects__container">
             <div class="projects__card">
@@ -51,8 +51,8 @@
                     <img class="card-img" src="https://picsum.photos/id/1011/800/450" alt="">
                 </figure>
                 <div class="card-body">
-                    <h4>Proyecto 1</h4>
-                    <p>Descripcion</p>
+                    <h4 class="card-body__h4">Proyecto 1</h4>
+                    <p class="card-body__p">Descripcion</p>
                     <button aria-label="Ver repositorio">
                         <a class="card-body__a" href="#">Repositorio</a>
                     </button>
@@ -63,8 +63,8 @@
                     <img class="card-img" src="https://picsum.photos/id/1011/800/450" alt="">
                 </figure>
                 <div class="card-body">
-                    <h4>Proyecto 1</h4>
-                    <p>Descripcion</p>
+                    <h4 class="card-body__h4">Proyecto 1</h4>
+                    <p class="card-body__p">Descripcion</p>
                     <button aria-label="Ver repositorio">
                         <a class="card-body__a" href="#">Repositorio</a>
                     </button>
@@ -75,8 +75,8 @@
                     <img class="card-img" src="https://picsum.photos/id/1011/800/450" alt="">
                 </figure>
                 <div class="card-body">
-                    <h4>Proyecto 1</h4>
-                    <p>Descripcion</p>
+                    <h4 class="card-body__h4">Proyecto 1</h4>
+                    <p class="card-body__p">Descripcion</p>
                     <button aria-label="Ver repositorio">
                         <a class="card-body__a" href="#">Repositorio</a>
                     </button>
@@ -87,8 +87,8 @@
                     <img class="card-img" src="https://picsum.photos/id/1011/800/450" alt="">
                 </figure>
                 <div class="card-body">
-                    <h4>Proyecto 1</h4>
-                    <p>Descripcion</p>
+                    <h4 class="card-body__h4">Proyecto 1</h4>
+                    <p class="card-body__p">Descripcion</p>
                     <button aria-label="Ver repositorio">
                         <a class="card-body__a" href="#">Repositorio</a>
                     </button>
@@ -102,43 +102,45 @@
         </div>
         <article class="skills-container">
             <div class="skills-icon">
-                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-html5" aria-hidden="true"></i>
                 <h4 class="skills-p">HTML5</h4>
             </div>
             <div class="skills-icon">
-                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-css3-alt"
+                aria-hidden="true"></i>
                 <h4 class="skills-p">CSS3</h4>
             </div>
             <div class="skills-icon">
-                <i class="fa-brands fa-js"></i>
+                <i class="fa-brands fa-js"
+                aria-hidden="true"></i>
                 <h4 class="skills-p">JavaScript</h4>
             </div>
             <div class="skills-icon">
-                <i class="fa-brands fa-react"></i>
+                <i class="fa-brands fa-react" aria-hidden="true"></i>
                 <h4 class="skills-p">React</h4>
             </div>
             <div class="skills-icon">
-                <i class="fa-brands fa-bootstrap"></i>
+                <i class="fa-brands fa-bootstrap" aria-hidden="true"></i>
                 <h4 class="skills-p">Bootstrap</h4>
             </div>
             <div class="skills-icon">
-                <i class="fa-brands fa-sass"></i>
+                <i class="fa-brands fa-sass" aria-hidden="true"></i>
                 <h4 class="skills-p">Sass</h4>
             </div>
             <div class="skills-icon">
-                <i class="fa-brands fa-figma"></i>
+                <i class="fa-brands fa-figma" aria-hidden="true"></i>
                 <h4 class="skills-p">Figma</h4>
             </div>
             <div class="skills-icon">
-                <i class="fa-brands fa-git"></i>
+                <i class="fa-brands fa-git" aria-hidden="true"></i>
                 <h4 class="skills-p">Git</h4>
             </div>
             <div class="skills-icon">
-                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
                 <h4 class="skills-p">GitHub</h4>
             </div>
             <div class="skills-icon">
-                <i class="fa-brands fa-trello"></i>
+                <i class="fa-brands fa-trello" aria-hidden="true"></i>
                 <h4 class="skills-p">Trello</h4>
             </div>
         </article>
@@ -147,7 +149,83 @@
         <div class="section__title">
             <h3>Cursos</h3>
         </div>
+        <article class="education__container">
+            <div class="education__card">
+                <figured class="education-figure">
+                    <img class="card-img" src="./assets/nucba.png" alt="">
+                </figured>
+                <div class="card-body">
+                    <h4 class="card-body__h4">Desarrollo web</h4>
+                    <p class="card-body__p">Descripcion</p>
+                    <button aria-label="Ver certificado">
+                        <a class="card-body__a" href="#">Certificado</a>
+                    </button>
+                </div>
+            </div>
+            <div class="education__card">
+                <figured class="education-figure">
+                    <img class="card-img" src="./assets/coderhouse.png" alt="">
+                </figured>
+                <div class="card-body">
+                    <h4 class="card-body__h4">Frontend developer React</h4>
+                    <p class="card-body__p">Descripcion</p>
+                    <button aria-label="Ver certificado">
+                        <a class="card-body__a" href="#">Certificado</a>
+                    </button>
+                </div>
+            </div>
+            <div class="education__card">
+                <figured class="education-figure">
+                    <img class="card-img" src="./assets/alura.png" alt="">
+                </figured>
+                <div class="card-body">
+                    <h4 class="card-body__h4">Programa ONE - Frontend React</h4>
+                    <p class="card-body__p">Descripcion</p>
+                    <button>
+                        <a class="card-body__a" href="#">Certificado</a>
+                    </button>
+                </div>
+            </div>
+        </article>
     </section>
+    <section class="about-me">
+        <div class="about-me__container">
+            <h3 class="about-me__title">Un poco sobre mí</h3>
+            <p class="about-me__p">Soy de Buenos Aires, Argentina. Hace 4 años comence a estudiar programacion y desde entonces me ha cautivado el desarrollo web y la creacion de interfaces de usuario atractivas y funcionales. He dedicado mucho tiempo a aprender e ir perfeccionando mis habilidades en HTML, CSS, JavaScript y React. Me gusta el aprendizaje continuo, ya que permite mantenerme actualizada y mejorar constantemente. Mi objetivo a futuro es convertirme en Full Stack Developer.</p>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="contact-container">
+            <h3 class="contact__title">Contacto</h3>
+            <p class="contact__p">
+                Si te interesó mi perfil, te dejo mi correo para que me contactes.
+            </p>
+            <div class="contact__mail">
+                <span class="contact__mail--span"><i class="fa-regular fa-envelope"></i></span>
+                <p class="contact__mail--p">sabrinavillasboa@gmail.com</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <h5 class="h5-footer">Sabrina Villasboa</h5>
+            <div class="footer-social-media">
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-github"></i>
+            </div>
+            <div class="footer-nav">
+                <ul class="footer-nav__ul">
+                    <li class="footer-nav__li"><a href="#">Inicio</a></li>
+                    <li class="footer-nav__li"><a href="#">Proyectos</a></li>
+                    <li class="footer-nav__li"><a href="#">Habilidades</a></li>
+                    <li class="footer-nav__li"><a href="#">Cursos</a></li>
+                    <li class="footer-nav__li"><a href="#">Sobre mi</a></li>
+                    <li class="footer-nav__li"><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+        
+    </footer> -->
     <script src="script.js"></script>
 </body>
 </html>
