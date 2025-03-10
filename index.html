@@ -16,11 +16,11 @@
             </button>
             <ul class="ul-menu">
                 <li class="menu-li"><a href="#">Inicio</a></li>
-                <li class="menu-li"><a href="#">Proyectos</a></li>
-                <li class="menu-li"><a href="#">Habilidades</a></li>
-                <li class="menu-li"><a href="#">Cursos</a></li>
-                <li class="menu-li"><a href="#">Sobre mi</a></li>
-                <li class="menu-li"><a href="#">Contacto</a></li>
+                <li class="menu-li"><a href="#projects">Proyectos</a></li>
+                <li class="menu-li"><a href="#skills">Habilidades</a></li>
+                <li class="menu-li"><a href="#education">Cursos</a></li>
+                <li class="menu-li"><a href="#about-me">Sobre mi</a></li>
+                <li class="menu-li"><a href="#contact">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -35,13 +35,17 @@
                 <h1 class="h1">Sabrina Villasboa</h1>
                 <h2 class="h2">Frontend Developer</h2>
                 <div class="main__social-media">
-                    <i class="fa-brands fa-linkedin"></i>
-                    <i class="fa-brands fa-github"></i>
+                    <a href="http://linkedin.com/in/sabrina-villasboa" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="http://github.com/sabrivillasboa" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
                 </div>
             </div>
         </section>
     </main>
-    <section class="projects">
+    <section class="projects" id="projects">
         <div class="section__title">
             <h3>Proyectos</h3>
         </div>
@@ -145,7 +149,7 @@
             </div>
         </article>
     </section>
-    <section class="skills">
+    <section class="skills" id="skills">
         <div class="section__title">
             <h3 id="skills-h3">Tecnologias</h3>
         </div>
@@ -194,20 +198,26 @@
             </div>
         </article>
     </section>
-    <section class="education">
+    <section class="education" id="education">
         <div class="section__title">
             <h3>Cursos</h3>
         </div>
         <article class="education__container">
             <div class="education__card">
                 <figured class="education-figure">
-                    <img class="card-img" src="./assets/nucba.png" alt="">
+                    <img class="card-img" src="./assets/alura.png" alt="alura-latam">
                 </figured>
                 <div class="card-body">
-                    <h4 class="card-body__h4">Desarrollo web</h4>
-                    <p class="card-body__p">Descripcion</p>
+                    <h4 class="card-body__h4" id="card-h4">
+                        Programa ONE - Frontend React.
+                        <br>
+                        Alura Latam y Oracle.
+                    </h4>
+                    <p class="card-body__p" id="card-p">
+                        • Fromación Desarrollo Personal, Lógica de Programación, Emprendimiento, Front End y React.
+                    </p>
                     <button aria-label="Ver certificado">
-                        <a class="card-body__a" href="#">Certificado</a>
+                        <a class="card-body__a" href="https://drive.google.com/file/d/1Y3Nqc4RfK70TWRQ97L90AuulkDI88m3l/view" target="_blank">Certificado</a>
                     </button>
                 </div>
             </div>
@@ -216,34 +226,46 @@
                     <img class="card-img" src="./assets/coderhouse.png" alt="">
                 </figured>
                 <div class="card-body">
-                    <h4 class="card-body__h4">Frontend developer React</h4>
-                    <p class="card-body__p">Descripcion</p>
+                    <h4 class="card-body__h4" id="card-h4">
+                        Desarrollo Front-End React.
+                        <br>
+                        CoderHouse.
+                    </h4>
+                    <p class="card-body__p" id="card-p">
+                        •Curso de Desarrollo Web, Javascript y React.
+                    </p>
                     <button aria-label="Ver certificado">
-                        <a class="card-body__a" href="#">Certificado</a>
+                        <a class="card-body__a" href="https://drive.google.com/file/d/1c3W_pgmZDSfWmNToc-W_J1XBsd7Uqo4f/view" target="_blank">Certificado</a>
                     </button>
                 </div>
             </div>
             <div class="education__card">
                 <figured class="education-figure">
-                    <img class="card-img" src="./assets/alura.png" alt="">
+                    <img class="card-img" src="./assets/nucba.png" alt="">
                 </figured>
                 <div class="card-body">
-                    <h4 class="card-body__h4">Programa ONE - Frontend React</h4>
-                    <p class="card-body__p">Descripcion</p>
+                    <h4 class="card-body__h4" id="card-h4">
+                        Diseño Web.
+                        <br>
+                        Nucba.
+                    </h4>
+                    <p class="card-body__p" id="card-p">
+                        •Curso de HTML y CSS.
+                    </p>
                     <button>
-                        <a class="card-body__a" href="#">Certificado</a>
+                        <a class="card-body__a" href="https://drive.google.com/file/d/14mUft9j6AXvoWffdUTXVg46GLsXcGhoV/view" target="_blank">Certificado</a>
                     </button>
                 </div>
             </div>
         </article>
     </section>
-    <section class="about-me">
+    <section class="about-me" id="about-me">
         <div class="about-me__container">
             <h3 class="about-me__title">Un poco sobre mí</h3>
             <p class="about-me__p">Soy de Buenos Aires, Argentina. Desde que comence a estudiar programacion me ha cautivado el desarrollo web y la creacion de interfaces de usuario atractivas y funcionales. He dedicado mucho tiempo a aprender e ir perfeccionando mis habilidades en HTML, CSS, JavaScript y React. Me gusta el aprendizaje continuo, ya que permite mantenerme actualizada y mejorar constantemente. Mi objetivo a futuro es convertirme en Full Stack Developer.</p>
         </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="contact-container">
             <h3 class="contact__title">Contacto</h3>
             <p class="contact__p">
@@ -259,17 +281,21 @@
         <div class="footer-container">
             <h4>Sabrina Villasboa</h4>
             <div class="footer-social-media">
-                <i class="fa-brands fa-linkedin"></i>
-                <i class="fa-brands fa-github"></i>
+                <a href="http://linkedin.com/in/sabrina-villasboa" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="http://github.com/sabrivillasboa" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
             </div>
             <div class="footer-nav">
                 <ul class="footer-nav__ul">
                     <li class="footer-nav__li"><a href="#">Inicio</a></li>
-                    <li class="footer-nav__li"><a href="#">Proyectos</a></li>
-                    <li class="footer-nav__li"><a href="#">Habilidades</a></li>
-                    <li class="footer-nav__li"><a href="#">Cursos</a></li>
-                    <li class="footer-nav__li"><a href="#">Sobre mi</a></li>
-                    <li class="footer-nav__li"><a href="#">Contacto</a></li>
+                    <li class="footer-nav__li"><a href="#projects">Proyectos</a></li>
+                    <li class="footer-nav__li"><a href="#skills">Habilidades</a></li>
+                    <li class="footer-nav__li"><a href="#education">Cursos</a></li>
+                    <li class="footer-nav__li"><a href="#about-me">Sobre mi</a></li>
+                    <li class="footer-nav__li"><a href="#contact">Contacto</a></li>
                 </ul>
             </div>
         </div>
