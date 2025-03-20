@@ -290,7 +290,14 @@ main {
   width: 80%;
   height: auto;
   overflow: hidden;
+  border-radius: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.education__card:hover {
+  transition: all 0.3s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
 /* Section Sobre mi */
@@ -541,7 +548,6 @@ main {
   }
 
   nav {
-    background-color: #4c99fe;
     align-items: center;
   }
 
@@ -558,6 +564,41 @@ main {
 
   .ul-menu li a {
     width: auto;
+    display: inline-block;
+    margin: 0 1rem;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    transition-duration: 0.3s;
+  }
+
+  .ul-menu li a:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--color-btn-violeta);
+    transform: scaleY(0);
+    transform-origin: 50% 0;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+  }
+
+  .ul-menu li a:hover,
+  .ul-menu li a:focus,
+  .ul-menu li a:active {
+    color: #ffffff;
+  }
+
+  .ul-menu li a:hover:before,
+  .ul-menu li a:focus:before,
+  .ul-menu li a:active:before {
+    transform: scaleY(1);
   }
 
   .section-main {
@@ -572,7 +613,8 @@ main {
   .figure-main img {
     width: 100%;
     max-width: 90%; /* Para asegurar que nunca se salga del viewport */
-    animation: scale-in-hor-right 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both 0.5s;
+    animation: scale-in-hor-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both
+      0.5s;
   }
 
   @keyframes scale-in-hor-right {
@@ -586,7 +628,7 @@ main {
       transform-origin: 100% 100%;
       opacity: 1;
     }
-  }  
+  }
 
   .title-main {
     padding-left: 8rem;
@@ -594,7 +636,23 @@ main {
 
   .main__social-media {
     gap: 2rem;
-    animation: scale-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both 1s;
+    animation: scale-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 1s;
+    overflow: hidden;
+  }
+
+  .main__social-media a {
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    transition-duration: 0.3s;
+    transition-property: transform;
+  }
+
+  .main__social-media a:hover,
+  .main__social-media a:focus,
+  .main__social-media a:active {
+    transform: scale(1.2);
   }
 
   @keyframes scale-in-left {
@@ -608,33 +666,36 @@ main {
       transform-origin: 0% 50%;
       opacity: 1;
     }
-  }  
-  
-  .h1 {
-    font-size: 3.5rem;
-    animation: tracking-in-expand-fwd 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
   }
 
-@keyframes tracking-in-expand-fwd {
-  0% {
-    letter-spacing: -0.5em;
-    transform: translateZ(-700px);
-    opacity: 0;
+  .h1 {
+    font-size: 3.5rem;
+    animation: tracking-in-expand-fwd 2s cubic-bezier(0.215, 0.61, 0.355, 1)
+      both;
   }
-  40% {
-    opacity: 0.6;
+
+  @keyframes tracking-in-expand-fwd {
+    0% {
+      letter-spacing: -0.5em;
+      transform: translateZ(-700px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      transform: translateZ(0);
+      opacity: 1;
+    }
   }
-  100% {
-    transform: translateZ(0);
-    opacity: 1;
-  }
-}
 
   .h2 {
     font-size: 2.5rem;
-    width: 80%;
+    width: 90%;
     height: 8rem;
-	  animation: tracking-in-expand-fwd 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both 0.5s;
+    overflow: hidden;
+    animation: tracking-in-expand-fwd 2s cubic-bezier(0.215, 0.61, 0.355, 1)
+      both 0.5s;
   }
 
   /* Seccion Proyectos */
@@ -726,5 +787,11 @@ main {
   .footer-nav__ul {
     width: 50%;
     white-space: nowrap;
+  }
+}
+
+@media (min-width: 1440px) {
+  .h2 {
+    width: 80%;
   }
 }
