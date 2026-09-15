@@ -46,8 +46,8 @@ nav {
 .ul-menu {
   position: fixed;
   top: 80px;
-  width: 60%;
-  height: auto;
+  width: 100%;
+  height: 100%;
   right: -100%;
 }
 
@@ -59,6 +59,8 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: auto;
+  padding: 0.5rem;
 }
 
 .ul-menu li a {
@@ -67,7 +69,6 @@ nav {
   padding: 1rem;
   text-align: center;
   font-size: 1.1rem;
-  
 }
 
 /* Seccion Principal */
@@ -89,12 +90,16 @@ main {
   flex-direction: column;
 }
 
+.figure-main{
+  background-color: var(--fondo-principal);
+}
+
 .figure-main figure {
   background-color: var(--fondo-principal);
 }
 
-.figure-main img {
-  background-color: var(--fondo-principal);
+.mi-img {
+  fill: var(--fondo-principal);
   width: 100%;
   object-fit: cover;
 }
@@ -111,14 +116,14 @@ main {
 
 .h1 {
   font-size: 2rem;
-  padding-top: 1rem;
+  padding: 0.5rem 0;
   font-weight: 700;
 }
 
 .h2 {
   color: var(--color-btn-violeta);
   font-size: 1.5rem;
-  padding: 1rem 0;
+  /* padding: 1rem 0; */
   width: 60%;
 }
 
@@ -128,7 +133,7 @@ main {
   font-size: 2.3rem;
   width: 90%;
   align-items: flex-end;
-  padding: 1rem 0;
+  padding: 1.5rem 0 0;
   gap: 1.5rem;
 }
 
@@ -323,6 +328,10 @@ main {
   background-color: var(--fondo-blanco);
 }
 
+strong {
+  background-color: var(--fondo-blanco);
+}
+
 /* Section Contact */
 
 .contact-container {
@@ -432,7 +441,7 @@ main {
     width: 50%;
     padding-left: 4rem;
     background-color: var(--fondo-principal);
-    gap: 1rem;
+    /* gap: 1rem; */
   }
 
   .h1 {
@@ -528,6 +537,7 @@ main {
 
   .contact-container {
     padding: 5rem;
+    gap: 1rem;
   }
 
   .footer-nav {
@@ -667,7 +677,7 @@ main {
   }
 
   .h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
     animation: tracking-in-expand-fwd 2s cubic-bezier(0.215, 0.61, 0.355, 1)
       both;
   }
@@ -688,9 +698,8 @@ main {
   }
 
   .h2 {
-    font-size: 2.5rem;
-    width: 90%;
-    height: 8rem;
+    font-size: 2rem;
+    width: 100%;
     overflow: hidden;
     animation: tracking-in-expand-fwd 2s cubic-bezier(0.215, 0.61, 0.355, 1)
       both 0.5s;
@@ -788,8 +797,8 @@ main {
   }
 }
 
-@media (min-width: 1440px) {
+/* @media (min-width: 1440px) {
   .h2 {
     width: 80%;
   }
-}
+} */

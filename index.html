@@ -1,314 +1,405 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <script src="https://kit.fontawesome.com/1ca19d9606.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/programador.png"
+      type="image/x-icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/1ca19d9606.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Portfolio Sabrina Villasboa</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-            <button class="btn" id="btn-menu" aria-label="Abrir menu">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-            <ul class="ul-menu">
-                <li class="menu-li"><a href="#">Inicio</a></li>
-                <li class="menu-li"><a href="#projects">Proyectos</a></li>
-                <li class="menu-li"><a href="#skills">Habilidades</a></li>
-                <li class="menu-li"><a href="#education">Cursos</a></li>
-                <li class="menu-li"><a href="#about-me">Sobre mi</a></li>
-                <li class="menu-li"><a href="#contact">Contacto</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <button class="btn" id="btn-menu" aria-label="Abrir menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="ul-menu">
+          <li class="menu-li"><a href="#">Inicio</a></li>
+          <li class="menu-li"><a href="#projects">Proyectos</a></li>
+          <li class="menu-li"><a href="#skills">Habilidades</a></li>
+          <li class="menu-li"><a href="#education">Cursos</a></li>
+          <li class="menu-li"><a href="#about-me">Sobre mi</a></li>
+          <li class="menu-li"><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <section class="section-main">
-            <div class="figure-main">
-                <figure>
-                    <img src="./assets/coleccion-diseno-sitios-web-receptivos-realistas.png" alt="Dispositivos">
-                </figure>
-            </div>
-            <div class="title-main">
-                <h1 class="h1">Sabrina Villasboa</h1>
-                <h2 class="h2">Frontend Developer Jr</h2>
-                <div class="main__social-media">
-                    <a href="http://linkedin.com/in/sabrina-villasboa" target="_blank">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a href="http://github.com/sabrivillasboa" target="_blank">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                    <a href="./assets/CV Sabrina Villasboa.pdf" download="CV Sabrina Villasboa" target="_blank">
-                        <i class="fa-solid fa-file-arrow-down"></i>
-                    </a>
-                </div>
-            </div>
-        </section>
+      <section class="section-main">
+        <div class="figure-main">
+          <figure>
+            <img
+              class="mi-img"
+              src="./assets/programador.png"
+              alt="Software development"
+            />
+          </figure>
+        </div>
+        <div class="title-main">
+          <h1 class="h1">Sabrina Villasboa</h1>
+          <h2 class="h2">Frontend Developer Jr</h2>
+          <div class="main__social-media">
+            <a href="http://linkedin.com/in/sabrina-villasboa" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="http://github.com/sabrivillasboa" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a
+              href="./assets/CV Sabrina Villasboa.pdf"
+              download="CV Sabrina Villasboa"
+              target="_blank"
+            >
+              <i class="fa-solid fa-file-arrow-down"></i>
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
     <section class="projects" id="projects">
-        <div class="section__title">
-            <h3>Proyectos</h3>
+      <div class="section__title">
+        <h3>Proyectos</h3>
+      </div>
+      <article class="projects__container">
+        <div class="projects__card">
+          <figure class="card-figure">
+            <img
+              class="card-img"
+              src="./images/aluraGeek.png"
+              alt="AluraGeek"
+            />
+          </figure>
+          <div class="card-body">
+            <h4 class="card-body__h4">AluraGeek</h4>
+            <p class="card-body__p">
+              • HTML, CSS, JavaScript, Figma, Json Server.
+              <br />
+              • Consumir datos de una API simulando un servidor con Json server.
+            </p>
+            <button aria-label="Ver repositorio">
+              <a
+                class="card-body__a"
+                href="https://github.com/sabrivillasboa/aluraGeek"
+                target="_blank"
+                >Repositorio</a
+              >
+            </button>
+          </div>
         </div>
-        <article class="projects__container">
-            <div class="projects__card">
-                <figure class="card-figure">
-                    <img class="card-img" src="./images/aluraGeek.png" alt="AluraGeek">
-                </figure>
-                <div class="card-body">
-                    <h4 class="card-body__h4">AluraGeek</h4>
-                    <p class="card-body__p">
-                        • HTML, CSS, JavaScript, Figma, Json Server.
-                        <br>
-                        • Consumir datos de una API simulando un servidor con Json server.
-                    </p>
-                    <button aria-label="Ver repositorio">
-                        <a class="card-body__a" href="https://github.com/sabrivillasboa/aluraGeek" target="_blank">Repositorio</a>
-                    </button>
-                </div>
-            </div>
-            
-            <div class="projects__card">
-                <figure class="card-figure">
-                    <img class="card-img" src="./images/encriptador.PNG" alt="Encriptador de texto">
-                </figure>
-                <div class="card-body">
-                    <h4 class="card-body__h4">Encriptador de texto</h4>
-                    <p class="card-body__p">
-                        • HTML, CSS, JavaScript, Figma.
-                        <br>
-                        • Encriptar y desencriptar mensajes con JavaScript. Diseño responsive.
-                    </p>
-                    <button aria-label="Ver repositorio">
-                        <a class="card-body__a" href="https://github.com/sabrivillasboa/challenge-encriptador" target="_blank">Repositorio</a>
-                    </button>
-                </div>
-            </div>
-            <div class="projects__card">
-                <figure class="card-figure">
-                    <img class="card-img" src="./images/react-final-coder.PNG" alt="EBook">
-                </figure>
-                <div class="card-body">
-                    <h4 class="card-body__h4">EBook</h4>
-                    <p class="card-body__p">
-                        • HTML, CSS, JavaScript, React, Material UI, Firebase.
-                        <br>
-                        •E-commerce de libros. Diseño responsive. Se utilizó Firebase como base de datos.
-                    </p>
-                    <button aria-label="Ver repositorio">
-                        <a class="card-body__a" href="https://github.com/sabrivillasboa/ReactFinal-ecommerce" target="_blank">Repositorio</a>
-                    </button>
-                </div>
-            </div>
-            <div class="projects__card">
-                <figure class="card-figure">
-                    <img class="card-img" src="./images/js-final.PNG" alt="MyBook">
-                </figure>
-                <div class="card-body">
-                    <h4 class="card-body__h4">MyBook</h4>
-                    <p class="card-body__p">
-                        • HTML, CSS, JavaScript, Bootstrap, Figma.
-                        <br>
-                        • E-commerce de libros. Diseño responsive. Se utilizó LocalStorage para el carrito de compras.
-                    </p>
-                    <button aria-label="Ver repositorio">
-                        <a class="card-body__a" href="https://github.com/sabrivillasboa/JS-ProyectoFinal-SabrinaVillasboa">Repositorio</a>
-                    </button>
-                </div>
-            </div>
-            <div class="projects__card">
-                <figure class="card-figure">
-                    <img class="card-img" src="./images/desarrollo-web-final.PNG" alt="Food House">
-                </figure>
-                <div class="card-body">
-                    <h4 class="card-body__h4">Food House</h4>
-                    <p class="card-body__p">
-                        • HTML, CSS, CSS Grid, Bootstrap, Figma.
-                        <br>
-                        • E-commerce de comida rápida. Diseño responsive.
-                    </p>
-                    <button aria-label="Ver repositorio">
-                        <a class="card-body__a" href="https://github.com/sabrivillasboa/PF-Villasboa-Sabrina">Repositorio</a>
-                    </button>
-                </div>
-            </div>
-            <div class="projects__card">
-                <figure class="card-figure">
-                    <img class="card-img" src="./images/web-final-nucba.PNG" alt="Fitness Gym">
-                </figure>
-                <div class="card-body">
-                    <h4 class="card-body__h4">Fitness Gym</h4>
-                    <p class="card-body__p">
-                        • HTML y CSS.
-                        <br>
-                        • Pagina web de un gimnasio. Diseño responsive. Mi primer proyecto.
-                    </p>
-                    <button aria-label="Ver repositorio">
-                        <a class="card-body__a" href="https://github.com/sabrivillasboa/PF-Villasboa-Sabrina">Repositorio</a>
-                    </button>
-                </div>
-            </div>
-        </article>
+
+        <div class="projects__card">
+          <figure class="card-figure">
+            <img
+              class="card-img"
+              src="./images/encriptador.PNG"
+              alt="Encriptador de texto"
+            />
+          </figure>
+          <div class="card-body">
+            <h4 class="card-body__h4">Encriptador de texto</h4>
+            <p class="card-body__p">
+              • HTML, CSS, JavaScript, Figma.
+              <br />
+              • Encriptar y desencriptar mensajes con JavaScript. Diseño
+              responsive.
+            </p>
+            <button aria-label="Ver repositorio">
+              <a
+                class="card-body__a"
+                href="https://github.com/sabrivillasboa/challenge-encriptador"
+                target="_blank"
+                >Repositorio</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="projects__card">
+          <figure class="card-figure">
+            <img
+              class="card-img"
+              src="./images/react-final-coder.PNG"
+              alt="EBook"
+            />
+          </figure>
+          <div class="card-body">
+            <h4 class="card-body__h4">EBook</h4>
+            <p class="card-body__p">
+              • HTML, CSS, JavaScript, React, Material UI, Firebase.
+              <br />
+              •E-commerce de libros. Diseño responsive. Se utilizó Firebase como
+              base de datos.
+            </p>
+            <button aria-label="Ver repositorio">
+              <a
+                class="card-body__a"
+                href="https://github.com/sabrivillasboa/ReactFinal-ecommerce"
+                target="_blank"
+                >Repositorio</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="projects__card">
+          <figure class="card-figure">
+            <img class="card-img" src="./images/js-final.PNG" alt="MyBook" />
+          </figure>
+          <div class="card-body">
+            <h4 class="card-body__h4">MyBook</h4>
+            <p class="card-body__p">
+              • HTML, CSS, JavaScript, Bootstrap, Figma.
+              <br />
+              • E-commerce de libros. Diseño responsive. Se utilizó LocalStorage
+              para el carrito de compras.
+            </p>
+            <button aria-label="Ver repositorio">
+              <a
+                class="card-body__a"
+                href="https://github.com/sabrivillasboa/JS-ProyectoFinal-SabrinaVillasboa"
+                >Repositorio</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="projects__card">
+          <figure class="card-figure">
+            <img
+              class="card-img"
+              src="./images/desarrollo-web-final.PNG"
+              alt="Food House"
+            />
+          </figure>
+          <div class="card-body">
+            <h4 class="card-body__h4">Food House</h4>
+            <p class="card-body__p">
+              • HTML, CSS, CSS Grid, Bootstrap, Figma.
+              <br />
+              • E-commerce de comida rápida. Diseño responsive.
+            </p>
+            <button aria-label="Ver repositorio">
+              <a
+                class="card-body__a"
+                href="https://github.com/sabrivillasboa/PF-Villasboa-Sabrina"
+                >Repositorio</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="projects__card">
+          <figure class="card-figure">
+            <img
+              class="card-img"
+              src="./images/web-final-nucba.PNG"
+              alt="Fitness Gym"
+            />
+          </figure>
+          <div class="card-body">
+            <h4 class="card-body__h4">Fitness Gym</h4>
+            <p class="card-body__p">
+              • HTML y CSS.
+              <br />
+              • Pagina web de un gimnasio. Diseño responsive. Mi primer
+              proyecto.
+            </p>
+            <button aria-label="Ver repositorio">
+              <a
+                class="card-body__a"
+                href="https://github.com/sabrivillasboa/PF-Villasboa-Sabrina"
+                >Repositorio</a
+              >
+            </button>
+          </div>
+        </div>
+      </article>
     </section>
     <section class="skills" id="skills">
-        <div class="section__title">
-            <h3 id="skills-h3">Tecnologias</h3>
+      <div class="section__title">
+        <h3 id="skills-h3">Tecnologias</h3>
+      </div>
+      <article class="skills-container">
+        <div class="skills-icon">
+          <i class="fa-brands fa-html5" aria-hidden="true"></i>
+          <h4 class="skills-p">HTML5</h4>
         </div>
-        <article class="skills-container">
-            <div class="skills-icon">
-                <i class="fa-brands fa-html5" aria-hidden="true"></i>
-                <h4 class="skills-p">HTML5</h4>
-            </div>
-            <div class="skills-icon">
-                <i class="fa-brands fa-css3-alt"
-                aria-hidden="true"></i>
-                <h4 class="skills-p">CSS3</h4>
-            </div>
-            <div class="skills-icon">
-                <i class="fa-brands fa-js"
-                aria-hidden="true"></i>
-                <h4 class="skills-p">JavaScript</h4>
-            </div>
-            <div class="skills-icon">
-                <i class="fa-brands fa-react" aria-hidden="true"></i>
-                <h4 class="skills-p">React</h4>
-            </div>
-            <div class="skills-icon">
-                <i class="fa-brands fa-bootstrap" aria-hidden="true"></i>
-                <h4 class="skills-p">Bootstrap</h4>
-            </div>
-            <div class="skills-icon">
-                <i class="fa-brands fa-sass" aria-hidden="true"></i>
-                <h4 class="skills-p">Sass</h4>
-            </div>
-            <div class="skills-icon">
-                <i class="fa-brands fa-figma" aria-hidden="true"></i>
-                <h4 class="skills-p">Figma</h4>
-            </div>
-            <div class="skills-icon">
-                <i class="fa-brands fa-git" aria-hidden="true"></i>
-                <h4 class="skills-p">Git</h4>
-            </div>
-            <div class="skills-icon">
-                <i class="fa-brands fa-github" aria-hidden="true"></i>
-                <h4 class="skills-p">GitHub</h4>
-            </div>
-            <div class="skills-icon">
-                <i class="fa-brands fa-trello" aria-hidden="true"></i>
-                <h4 class="skills-p">Trello</h4>
-            </div>
-        </article>
+        <div class="skills-icon">
+          <i class="fa-brands fa-css3-alt" aria-hidden="true"></i>
+          <h4 class="skills-p">CSS3</h4>
+        </div>
+        <div class="skills-icon">
+          <i class="fa-brands fa-js" aria-hidden="true"></i>
+          <h4 class="skills-p">JavaScript</h4>
+        </div>
+        <div class="skills-icon">
+          <i class="fa-brands fa-react" aria-hidden="true"></i>
+          <h4 class="skills-p">React</h4>
+        </div>
+        <div class="skills-icon">
+          <i class="fa-brands fa-bootstrap" aria-hidden="true"></i>
+          <h4 class="skills-p">Bootstrap</h4>
+        </div>
+        <div class="skills-icon">
+          <i class="fa-brands fa-sass" aria-hidden="true"></i>
+          <h4 class="skills-p">Sass</h4>
+        </div>
+        <div class="skills-icon">
+          <i class="fa-brands fa-figma" aria-hidden="true"></i>
+          <h4 class="skills-p">Figma</h4>
+        </div>
+        <div class="skills-icon">
+          <i class="fa-brands fa-git" aria-hidden="true"></i>
+          <h4 class="skills-p">Git</h4>
+        </div>
+        <div class="skills-icon">
+          <i class="fa-brands fa-github" aria-hidden="true"></i>
+          <h4 class="skills-p">GitHub</h4>
+        </div>
+        <div class="skills-icon">
+          <i class="fa-brands fa-trello" aria-hidden="true"></i>
+          <h4 class="skills-p">Trello</h4>
+        </div>
+      </article>
     </section>
     <section class="education" id="education">
-        <div class="section__title">
-            <h3>Cursos</h3>
+      <div class="section__title">
+        <h3>Cursos</h3>
+      </div>
+      <article class="education__container">
+        <div class="education__card">
+          <figured class="education-figure">
+            <img class="card-img" src="./assets/alura.png" alt="alura-latam" />
+          </figured>
+          <div class="card-body">
+            <h4 class="card-body__h4" id="card-h4">
+              Programa ONE - Frontend React.
+              <br />
+              Alura Latam y Oracle.
+            </h4>
+            <p class="card-body__p" id="card-p">
+              • Formación Desarrollo Personal, Lógica de Programación,
+              Emprendimiento, Front End y React.
+            </p>
+            <button aria-label="Ver certificado">
+              <a
+                class="card-body__a"
+                href="https://drive.google.com/file/d/1Y3Nqc4RfK70TWRQ97L90AuulkDI88m3l/view"
+                target="_blank"
+                >Certificado</a
+              >
+            </button>
+          </div>
         </div>
-        <article class="education__container">
-            <div class="education__card">
-                <figured class="education-figure">
-                    <img class="card-img" src="./assets/alura.png" alt="alura-latam">
-                </figured>
-                <div class="card-body">
-                    <h4 class="card-body__h4" id="card-h4">
-                        Programa ONE - Frontend React.
-                        <br>
-                        Alura Latam y Oracle.
-                    </h4>
-                    <p class="card-body__p" id="card-p">
-                        • Formación Desarrollo Personal, Lógica de Programación, Emprendimiento, Front End y React.
-                    </p>
-                    <button aria-label="Ver certificado">
-                        <a class="card-body__a" href="https://drive.google.com/file/d/1Y3Nqc4RfK70TWRQ97L90AuulkDI88m3l/view" target="_blank">Certificado</a>
-                    </button>
-                </div>
-            </div>
-            <div class="education__card">
-                <figured class="education-figure">
-                    <img class="card-img" src="./assets/coderhouse.png" alt="">
-                </figured>
-                <div class="card-body">
-                    <h4 class="card-body__h4" id="card-h4">
-                        Desarrollo Front-End React.
-                        <br>
-                        CoderHouse.
-                    </h4>
-                    <p class="card-body__p" id="card-p">
-                        •Curso de Desarrollo Web, Javascript y React.
-                    </p>
-                    <button aria-label="Ver certificado">
-                        <a class="card-body__a" href="https://drive.google.com/file/d/1c3W_pgmZDSfWmNToc-W_J1XBsd7Uqo4f/view" target="_blank">Certificado</a>
-                    </button>
-                </div>
-            </div>
-            <div class="education__card">
-                <figured class="education-figure">
-                    <img class="card-img" src="./assets/nucba.png" alt="">
-                </figured>
-                <div class="card-body">
-                    <h4 class="card-body__h4" id="card-h4">
-                        Diseño Web.
-                        <br>
-                        Nucba.
-                    </h4>
-                    <p class="card-body__p" id="card-p">
-                        •Curso de HTML y CSS.
-                    </p>
-                    <button>
-                        <a class="card-body__a" href="https://drive.google.com/file/d/14mUft9j6AXvoWffdUTXVg46GLsXcGhoV/view" target="_blank">Certificado</a>
-                    </button>
-                </div>
-            </div>
-        </article>
+        <div class="education__card">
+          <figured class="education-figure">
+            <img class="card-img" src="./assets/coderhouse.png" alt="" />
+          </figured>
+          <div class="card-body">
+            <h4 class="card-body__h4" id="card-h4">
+              Desarrollo Front-End React.
+              <br />
+              CoderHouse.
+            </h4>
+            <p class="card-body__p" id="card-p">
+              •Curso de Desarrollo Web, Javascript y React.
+            </p>
+            <button aria-label="Ver certificado">
+              <a
+                class="card-body__a"
+                href="https://drive.google.com/file/d/1c3W_pgmZDSfWmNToc-W_J1XBsd7Uqo4f/view"
+                target="_blank"
+                >Certificado</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="education__card">
+          <figured class="education-figure">
+            <img class="card-img" src="./assets/nucba.png" alt="" />
+          </figured>
+          <div class="card-body">
+            <h4 class="card-body__h4" id="card-h4">
+              Diseño Web.
+              <br />
+              Nucba.
+            </h4>
+            <p class="card-body__p" id="card-p">•Curso de HTML y CSS.</p>
+            <button>
+              <a
+                class="card-body__a"
+                href="https://drive.google.com/file/d/14mUft9j6AXvoWffdUTXVg46GLsXcGhoV/view"
+                target="_blank"
+                >Certificado</a
+              >
+            </button>
+          </div>
+        </div>
+      </article>
     </section>
     <section class="about-me" id="about-me">
-        <div class="about-me__container">
-            <h3 class="about-me__title">Un poco sobre mí</h3>
-            <p class="about-me__p">Soy Frontend Developer Jr, con experiencia desarrollando proyectos web utilizando JavaScript, React, HTML y CSS.
-Durante mi formación he trabajado en proyectos que incluyen interfaces responsive, consumo y gestión de datos, componentes reutilizables y funcionalidades dinámicas.
-También tengo conocimientos en Node.js, JSON Server, Bootstrap, Material UI, Sass, Git, GitHub, C# .NET y SQL Server.
-Actualmente curso la Tecnicatura Superior en Desarrollo de Software, con el objetivo de seguir creciendo profesionalmente y ampliar mis conocimientos hacia el desarrollo Full Stack.
-Mis experiencias laborales previas me permitieron desarrollar habilidades de comunicación, resolución de problemas, trabajo orientado a objetivos y adaptación a diferentes situaciones, que hoy busco aplicar en el ámbito tecnológico.</p>
-        </div>
+      <div class="about-me__container">
+        <h3 class="about-me__title">Un poco sobre mí</h3>
+        <p class="about-me__p">
+          Soy Frontend Developer Jr, con experiencia desarrollando proyectos web
+          utilizando JavaScript, React, HTML y CSS. Durante mi formación he
+          trabajado en proyectos que incluyen interfaces responsive, consumo y
+          gestión de datos, componentes reutilizables y funcionalidades
+          dinámicas. También tengo conocimientos en Node.js, JSON Server,
+          Bootstrap, Material UI, Sass, Git, GitHub, C# .NET y SQL Server.
+          <br> Actualmente curso la <strong>Tecnicatura Superior en Desarrollo de Software</strong>,
+          con el objetivo de seguir creciendo profesionalmente y ampliar mis
+          conocimientos hacia el desarrollo Full Stack. Mis experiencias
+          laborales previas me permitieron desarrollar habilidades de
+          comunicación, resolución de problemas, trabajo orientado a objetivos y
+          adaptación a diferentes situaciones, que hoy busco aplicar en el
+          ámbito tecnológico.
+        </p>
+      </div>
     </section>
     <section class="contact" id="contact">
-        <div class="contact-container">
-
-            <h3 class="contact__title">Contacto</h3>
-            <p class="contact__p">
-                Si te interesó mi perfil, te dejo mi correo para que me contactes.
-            </p>
-            <div class="contact__mail">
-                <span class="contact__mail--span"><i class="fa-regular fa-envelope"></i></span>
-                <p class="contact__mail--p">sabrinavillasboa@gmail.com</p>
-            </div>
+      <div class="contact-container">
+        <h3 class="contact__title">Contacto</h3>
+        <div class="contact__mail">
+          <span class="contact__mail--span"
+            ><i class="fa-regular fa-envelope"></i
+          ></span>
+          <p class="contact__mail--p">sabrinavillasboa@gmail.com</p>
         </div>
+        <div class="contact__mail">
+          <span class="contact__mail--span"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></span>
+          <p class="contact__mail--p">linkedin.com/in/sabrina-villasboa</p>
+        </div>
+      </div>
     </section>
     <footer>
-        <div class="footer-container">
-            <h4>Sabrina Villasboa</h4>
-            <div class="footer-social-media">
-                <a href="http://linkedin.com/in/sabrina-villasboa" target="_blank">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-                <a href="http://github.com/sabrivillasboa" target="_blank">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-            </div>
-            <div class="footer-nav">
-                <ul class="footer-nav__ul">
-                    <li class="footer-nav__li"><a href="#">Inicio</a></li>
-                    <li class="footer-nav__li"><a href="#projects">Proyectos</a></li>
-                    <li class="footer-nav__li"><a href="#skills">Habilidades</a></li>
-                    <li class="footer-nav__li"><a href="#education">Cursos</a></li>
-                    <li class="footer-nav__li"><a href="#about-me">Sobre mi</a></li>
-                    <li class="footer-nav__li"><a href="#contact">Contacto</a></li>
-                </ul>
-            </div>
+      <div class="footer-container">
+        <h4>Sabrina Villasboa</h4>
+        <div class="footer-social-media">
+          <a href="http://linkedin.com/in/sabrina-villasboa" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="http://github.com/sabrivillasboa" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
         </div>
-        
+        <div class="footer-nav">
+          <ul class="footer-nav__ul">
+            <li class="footer-nav__li"><a href="#">Inicio</a></li>
+            <li class="footer-nav__li"><a href="#projects">Proyectos</a></li>
+            <li class="footer-nav__li"><a href="#skills">Habilidades</a></li>
+            <li class="footer-nav__li"><a href="#education">Cursos</a></li>
+            <li class="footer-nav__li"><a href="#about-me">Sobre mi</a></li>
+            <li class="footer-nav__li"><a href="#contact">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
     </footer>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
